@@ -39,13 +39,13 @@ namespace DesafioProjetoHospedagem.Models
 
         public decimal CalcularValorDiaria()
         {
-            
-            decimal valor = DiasReservados * Suite.ValorDiaria;
 
+            decimal valor = DiasReservados * Suite.ValorDiaria;
 
             if (DiasReservados >= 10)
             {
-                valor -= valor * 10m;
+                valor -= valor * 0.10m;
+
             }
 
             return valor;
